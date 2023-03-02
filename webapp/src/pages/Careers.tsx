@@ -6,42 +6,46 @@ export default function Careers() {
   return (
     <div className="w-full h-screen">
       <div
-        className="w-full h-4/6 bg-no-repeat bg-cover bg-fixed"
+        className="w-full h-4/6 bg-no-repeat bg-cover bg-center bg-center bg-fixed"
         style={{
           backgroundImage: `url(${hero})`,
         }}
       ></div>
       <div className="flex justify-center">
-        <h1 className="font-mono text-4xl pt-10">Driving careers forward</h1>
+        <h1 className="text-secondaryBlue font-bold md:text-4xl sm:text-3xl xs: text-2xl pt-10">
+          Driving careers forward
+        </h1>
       </div>
       <div className="flex">
-        <h1 className="font-mono text-3xl pl-20 pt-10">
+        <h1 className="text-secondaryBlue font-bold md:text-3xl sm:text-2xl xs: text-xl pl-20 pr-10 pt-5">
           Serving Businesses & Job Seekers
         </h1>
       </div>
       <div className="flex">
-        <h1 className="font-mono text-2xl pl-20 pt-10">Work for us</h1>
+        <h1 className="text-secondaryBlue font-bold md:text-2xl sm:text-xl xs: text-lg pl-20 pt-5">
+          Work for us
+        </h1>
       </div>
       <div className="flex">
-        <p className="font-mono text-2xl pl-20 pt-5">
+        <p className=" text-xl pl-20 md:pt-5 pr-20">
           Health 101 Services continuously searches for talented and skilled
-          healthcare professionals. We are looking for experienced and licensed
+          healthcare professionals. We're looking for experienced and licensed
           healthcare and homecare staff. If you are interested in pursuing a
           career of caring as part of a high quality, teamwork-oriented
           atmosphere. Please contact us.
         </p>
       </div>
       <div>
-        <p className="font-mono text-2xl pl-20 p-5">
-          We are hiring for positions in Manitoba, Canada. For more information,
+        <p className=" text-xl pl-20 p-5 pr-20">
+          We're hiring for positions in Manitoba, Canada. For more information,
           or to apply for a position, please email your resume and diploma or
           certificate to admin@health101services.ca ​
         </p>
       </div>
-      <div className="pt-5 pl-20 pr-20 pb-10 text-xl">
-        <ul className="list-disc list-inside font-mono">
-          <div className="flex pb-5">
-            <h2 className="font-mono text-3xl pt-5">
+      <div className="pl-20 pr-20 pb-10 text-xl">
+        <ul className="list-disc list-inside ">
+          <div className="flex sm:pb-5">
+            <h2 className="text-secondaryBlue font-bold md:text-3xl sm:text-2xl xs: text-xl pt-5">
               Health 101 Services staff are:
             </h2>
           </div>
@@ -57,10 +61,10 @@ export default function Careers() {
           </li>
         </ul>
       </div>
-      <div className="pt-5 pl-20 pr-20 pb-10 text-xl">
-        <ul className="list-disc list-inside font-mono">
-          <div className="flex pb-5">
-            <h2 className="font-mono text-3xl pt-5">
+      <div className="pl-20 pr-20 pb-10 text-xl">
+        <ul className="list-disc list-inside ">
+          <div className="flex sm:pb-5">
+            <h2 className="text-secondaryBlue font-bold md:text-3xl sm:text-2xl xs: text-xl">
               Some of the positions we're hiring include:
             </h2>
           </div>

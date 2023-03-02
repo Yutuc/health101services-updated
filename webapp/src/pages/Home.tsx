@@ -1,23 +1,24 @@
 import React from "react";
 import hero from "../assets/hero/home-hero.jpg";
+import EmailForm from "../components/organisms/EmailForm";
 import Footer from "../components/organisms/Footer";
 
 export default function Home() {
   return (
     <div className="w-full h-screen">
       <div
-        className="w-full h-4/6 bg-no-repeat bg-cover bg-fixed"
+        className="w-full h-4/6 bg-no-repeat bg-cover bg-center bg-fixed"
         style={{
           backgroundImage: `url(${hero})`,
         }}
       ></div>
-      <div className="flex justify-center">
-        <h1 className="font-mono text-4xl pt-10">
+      <div className="flex justify-center md:text-4xl sm:text-3xl xs: text-2xl">
+        <h1 className="text-secondaryBlue font-bold pt-10">
           Welcome to Health 101 Services
         </h1>
       </div>
-      <div className="pt-10 pl-20 pr-20 pb-10 text-xl">
-        <ul className="list-disc font-mono">
+      <div className="pt-5 pl-20 pr-20 pb-5 text-xl">
+        <ul className="list-disc ">
           <li>
             Health 101 Services has earned its reputation by building solid
             relationships with clients, staff and their families. Health 101
@@ -42,6 +43,7 @@ export default function Home() {
           </li>
         </ul>
       </div>
+      <EmailForm />
       <Footer />
     </div>
   );

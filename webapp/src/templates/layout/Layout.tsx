@@ -1,6 +1,5 @@
 import React from "react";
 import NavBar from "../../components/organisms/NavBar";
-import BottomNav from "../../components/organisms/BottomNav";
 import AppBody from "../../components/organisms/AppBody";
 
 export interface LayoutProps {
@@ -12,7 +11,6 @@ export function Layout({ children }: LayoutProps) {
     <>
       <NavBar />
       <AppBody>{children}</AppBody>
-      <BottomNav />
     </>
   );
 }

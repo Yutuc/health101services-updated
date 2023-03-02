@@ -1,5 +1,6 @@
 import React from "react";
 import hero from "../assets/hero/contact-hero.jpg";
+import EmailForm from "../components/organisms/EmailForm";
 import Footer from "../components/organisms/Footer";
 
 export default function Contact() {
@@ -12,10 +13,12 @@ export default function Contact() {
         }}
       ></div>
       <div className="flex justify-center">
-        <h1 className="font-mono text-4xl pt-10">We're here to help</h1>
+        <h1 className="text-secondaryBlue font-bold md:text-4xl sm:text-3xl xs: text-2xl pt-10">
+          We're here to help
+        </h1>
       </div>
-      <div className="pt-10 pl-20 pr-20 pb-10 text-xl">
-        <ul className="list-none font-mono">
+      <div className="pt-5 pl-20 pr-20 pb-5 text-xl">
+        <ul className="list-none ">
           <li>
             Thank you for your interest in Health 101 Services. If you would
             like to contact us, please feel free to send an email to
@@ -26,6 +29,7 @@ export default function Contact() {
           </li>
         </ul>
       </div>
+      <EmailForm />
       <Footer />
     </div>
   );
