@@ -7,6 +7,7 @@ export interface AppHeaderProps {
 
 export default function EmailForm({}: AppHeaderProps) {
   const [sent, setSent] = useState(false);
+  const [failed, setFailed] = useState(false);
 
   function timeout(delay: number) {
     return new Promise((res) => setTimeout(res, delay));
@@ -23,12 +24,16 @@ export default function EmailForm({}: AppHeaderProps) {
       )
       .then(
         async (result) => {
-          setSent(!sent);
-          await timeout(5000);
-          setSent(sent);
+          setSent(true);
+          setFailed(false);
+          await timeout(4000);
+          setSent(false);
           console.log(result.text);
         },
-        (error) => {
+        async (error) => {
+          setSent(false);
+          setFailed(true);
+          await timeout(4000);
           console.log(error.text);
         }
       );
@@ -36,7 +41,7 @@ export default function EmailForm({}: AppHeaderProps) {
 
   return (
     <div className="columns-1 pl-36 pr-36">
-      <div className="flex justify-center pb-3">
+      <div className="flex justify-center pb-1">
         <h1 className="text-secondaryBlue font-bold  md:text-4xl sm:text-3xl xs: text-2xl">
           Connect with us
         </h1>
@@ -45,7 +50,7 @@ export default function EmailForm({}: AppHeaderProps) {
         <h1 className="md:text-2xl sm:text-xl">(204)-880-1009</h1>
       </div>
       <div className="flex justify-center pb-5">
-        <h1 className="md:text-2xl sm:text-xl">admin@health101services.ca</h1>
+        <h1 className="md:text-2xl sm:text-xl">health101services@gmail.com</h1>
       </div>
       <form onSubmit={sendEmail}>
         <input
@@ -85,13 +90,14 @@ export default function EmailForm({}: AppHeaderProps) {
           <div className="flex">
             <h1
               className={
-                sent
-                  ? "transition-opacity duration-700 ease-in-out text-secondaryBlue font-bold md:text-2xl sm:text-lg py-2 pl-5"
-                  : "transition-opacity duration-700 ease-in-out opacity-0 text-secondaryBlue font-bold md:text-2xl sm:text-lg p-2"
+                sent && !failed
+                  ? "transition-opacity duration-1000 ease-in-out text-secondaryBlue font-bold md:text-2xl sm:text-lg py-2 pl-5"
+                  : "transition-opacity duration-1000 ease-in-out opacity-0 text-secondaryBlue font-bold md:text-2xl sm:text-lg p-2"
               }
             >
-              Thank you for your email. We will get back to you as soon as we
-              can!
+              {sent && !failed
+                ? "Thank you for your email. We will get back to you as soon as we can!"
+                : "Something went wrong while sending the email. Please try again"}
             </h1>
           </div>
         </div>

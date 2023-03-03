@@ -40,7 +40,7 @@ export default function Careers() {
           </h1>
         </div>
         <div className="flex">
-          <p className=" text-xl pl-20 md:pt-5 pr-20">
+          <p className=" text-xl pl-20 pr-20">
             Health 101 Services continuously searches for talented and skilled
             healthcare professionals. We're looking for experienced and licensed
             healthcare and homecare staff. If you are interested in pursuing a

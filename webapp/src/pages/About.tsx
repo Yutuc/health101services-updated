@@ -34,7 +34,7 @@ export default function About() {
             About Us
           </h1>
         </div>
-        <div className="md:pt-5 pl-20 pr-20 pb-10 text-xl">
+        <div className="pl-20 pr-20 pb-10 text-xl">
           <ul className="list-disc list-inside">
             <li>
               We're a group of professionals from healthcare, business, banking,
