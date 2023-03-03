@@ -15,31 +15,31 @@ export default function NavBar({}: AppHeaderProps) {
       </header>
       <div className="flex justify-evenly bg-secondaryBlue p-5">
         <Link
-          className="text-white font-bold sm:xl md:text-2xl align-middle hover:underline"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white font-bold sm:xl md:text-2xl align-middle"
           to="/"
         >
           Home
         </Link>
         <Link
-          className="text-white font-bold sm:xl md:text-2xl align-middle hover:underline"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white font-bold sm:xl md:text-2xl align-middle"
           to="/about"
         >
           About
         </Link>
         <Link
-          className="text-white font-bold sm:xl md:text-2xl align-middle hover:underline"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white font-bold sm:xl md:text-2xl align-middle"
           to="/contact"
         >
           Contact
         </Link>
         <Link
-          className="text-white font-bold sm:xl md:text-2xl align-middle hover:underline"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white font-bold sm:xl md:text-2xl align-middle"
           to="/services"
         >
           Services
         </Link>
         <Link
-          className="text-white font-bold sm:xl md:text-2xl align-middle hover:underline"
+          className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 text-white font-bold sm:xl md:text-2xl align-middle"
           to="/careers"
         >
           Careers

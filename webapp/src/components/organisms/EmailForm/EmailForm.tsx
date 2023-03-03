@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 export interface AppHeaderProps {
@@ -6,6 +6,12 @@ export interface AppHeaderProps {
 }
 
 export default function EmailForm({}: AppHeaderProps) {
+  const [sent, setSent] = useState(false);
+
+  function timeout(delay: number) {
+    return new Promise((res) => setTimeout(res, delay));
+  }
+
   const sendEmail = (e: any) => {
     e.preventDefault();
     emailjs
@@ -16,7 +22,10 @@ export default function EmailForm({}: AppHeaderProps) {
         "OimTczru9G2EkVsPb"
       )
       .then(
-        (result) => {
+        async (result) => {
+          setSent(!sent);
+          await timeout(5000);
+          setSent(sent);
           console.log(result.text);
         },
         (error) => {
@@ -66,12 +75,25 @@ export default function EmailForm({}: AppHeaderProps) {
           name="message"
           required
         ></textarea>
-        <div className="flex justify-end">
-          <input
-            className="bg-secondaryBlue hover:bg-secondaryGreen rounded-3xl md:w-44 sm: w-32 text-white font-bold md:text-2xl sm:text-lg p-2"
+        <div className="flex justify-between h-12">
+          <button
+            className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-secondaryBlue hover:bg-secondaryGreen rounded-3xl md:w-44 sm: w-32 text-white font-bold md:text-2xl sm:text-lg p-2"
             type="submit"
-            value="Send"
-          ></input>
+          >
+            Send
+          </button>
+          <div className="flex">
+            <h1
+              className={
+                sent
+                  ? "transition-opacity duration-700 ease-in-out text-secondaryBlue font-bold md:text-2xl sm:text-lg py-2 pl-5"
+                  : "transition-opacity duration-700 ease-in-out opacity-0 text-secondaryBlue font-bold md:text-2xl sm:text-lg p-2"
+              }
+            >
+              Thank you for your email. We will get back to you as soon as we
+              can!
+            </h1>
+          </div>
         </div>
       </form>
     </div>
