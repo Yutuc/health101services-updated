@@ -24,18 +24,18 @@ export default function Home() {
     >
       <div className="w-full h-screen">
         <div
-          className="w-full h-4/6 bg-no-repeat bg-cover bg-center bg-fixed"
+          className="w-full h-4/6 bg-cover bg-center"
           style={{
             backgroundImage: `url(${hero})`,
           }}
         ></div>
-        <div className="flex justify-center md:text-4xl sm:text-3xl xs: text-2xl">
-          <h1 className="text-secondaryBlue font-bold pt-10">
-            Welcome to Health 101 Services
+        <div className="flex justify-center md:text-3xl sm: text-xl">
+          <h1 className="text-secondaryBlue font-bold pt-5">
+            Welcome to Health101 Services
           </h1>
         </div>
-        <div className="pt-5 pl-20 pr-20 pb-5 text-xl">
-          <ul className="list-disc ">
+        <div className="pt-5 px-10 pb-5 text-xl">
+          <ul className="list-disc list-inside">
             <li>
               Health 101 Services has earned its reputation by building solid
               relationships with clients, staff and their families. Health 101

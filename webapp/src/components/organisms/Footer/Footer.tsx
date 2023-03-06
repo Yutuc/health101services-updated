@@ -14,9 +14,9 @@ export default function Footer({}: AppHeaderProps) {
   }
 
   return (
-    <div className="w-full h-1/4 bg-secondaryBlue mt-5">
+    <div className="w-full h-1/4 bg-secondaryBlue mt-5 p-5">
       <div className="flex justify-center md:text-xl sm:text-lg">
-        <h1 className="text-secondaryBlue font-bold text-white pt-10">
+        <h1 className="text-secondaryBlue font-bold text-white">
           Contact Information
         </h1>
       </div>

@@ -20,18 +20,18 @@ export default function Contact() {
     >
       <div className="w-full h-screen">
         <div
-          className="w-full h-4/6 bg-no-repeat bg-cover bg-fixed"
+          className="w-full h-4/6 bg-cover bg-center"
           style={{
             backgroundImage: `url(${hero})`,
           }}
         ></div>
-        <div className="flex justify-center">
-          <h1 className="text-secondaryBlue font-bold md:text-4xl sm:text-3xl xs: text-2xl pt-10">
+        <div className="flex justify-center md:text-3xl sm: text-xl">
+          <h1 className="text-secondaryBlue font-bold pt-5">
             We're here to help
           </h1>
         </div>
-        <div className="pt-5 pl-20 pr-20 pb-5 text-xl">
-          <ul className="list-none ">
+        <div className="pt-5 px-10 pb-5 text-xl">
+          <ul className="list-none list-inside ">
             <li>
               Thank you for your interest in Health 101 Services. If you would
               like to contact us, please feel free to send an email to

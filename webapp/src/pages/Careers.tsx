@@ -19,28 +19,28 @@ export default function Careers() {
     >
       <div className="w-full h-screen">
         <div
-          className="w-full h-4/6 bg-no-repeat bg-cover bg-center bg-center bg-fixed"
+          className="w-full h-4/6 bg-cover bg-center"
           style={{
             backgroundImage: `url(${hero})`,
           }}
         ></div>
-        <div className="flex justify-center">
-          <h1 className="text-secondaryBlue font-bold md:text-4xl sm:text-3xl xs: text-2xl pt-10">
+        <div className="pt-5 flex justify-center md:text-3xl sm: text-xl">
+          <h1 className="text-secondaryBlue font-bold">
             Driving careers forward
           </h1>
         </div>
-        <div className="flex">
-          <h1 className="text-secondaryBlue font-bold md:text-3xl sm:text-2xl xs: text-xl pl-20 pr-10 pt-5">
-            Serving Businesses & Job Seekers
+        <div className="flex md:pl-20 sm: pl-10 md:text-2xl sm: text-xl pt-5">
+          <h1 className="text-secondaryBlue font-bold">
+            Serving businesses & job seekers
           </h1>
         </div>
         <div className="flex">
-          <h1 className="text-secondaryBlue font-bold md:text-2xl sm:text-xl xs: text-lg pl-20 pt-5">
+          <h1 className="text-secondaryBlue font-bold md:text-2xl sm:text-xl xs: text-lg md:pl-20 sm: pl-10 pt-2">
             Work for us
           </h1>
         </div>
         <div className="flex">
-          <p className=" text-xl pl-20 pr-20">
+          <p className=" text-xl md:px-20 sm: px-10">
             Health 101 Services continuously searches for talented and skilled
             healthcare professionals. We're looking for experienced and licensed
             healthcare and homecare staff. If you are interested in pursuing a
@@ -49,19 +49,19 @@ export default function Careers() {
           </p>
         </div>
         <div>
-          <p className=" text-xl pl-20 p-5 pr-20">
+          <p className=" text-xl pl-20 pt-5 pr-20 md:pl-20 sm: pl-10">
             We're hiring for positions in Manitoba, Canada. For more
             information, or to apply for a position, please email your resume
             and diploma or certificate to admin@health101services.ca ​
           </p>
         </div>
-        <div className="pl-20 pr-20 pb-10 text-xl">
-          <ul className="list-disc list-inside ">
-            <div className="flex sm:pb-5">
-              <h2 className="text-secondaryBlue font-bold md:text-3xl sm:text-2xl xs: text-xl pt-5">
-                Health 101 Services staff are:
-              </h2>
-            </div>
+        <div className="md:pt-10 sm: pt-5 text-xl">
+          <div className="flex md:px-20 sm: px-10">
+            <h1 className="text-secondaryBlue font-bold md:text-2xl sm:text-xl xs: text-lg">
+              Health101 Services staff are:
+            </h1>
+          </div>
+          <ul className="md:px-20 sm: px-10 list-disc list-inside">
             <li>Selected for their knowledge and for their people skills.</li>
             <li>
               High level of professionalism and expertise in their respective
@@ -74,13 +74,13 @@ export default function Careers() {
             </li>
           </ul>
         </div>
-        <div className="pl-20 pr-20 pb-10 text-xl">
-          <ul className="list-disc list-inside ">
-            <div className="flex sm:pb-5">
-              <h2 className="text-secondaryBlue font-bold md:text-3xl sm:text-2xl xs: text-xl">
-                Some of the positions we're hiring include:
-              </h2>
-            </div>
+        <div className="md:pt-10 sm: pt-5 pb-10 text-xl">
+          <div className="md:px-20 sm: pl-10">
+            <h1 className="text-secondaryBlue font-bold md:text-2xl sm:text-xl xs: text-lg">
+              Some of the positions we're hiring include:
+            </h1>
+          </div>
+          <ul className="md:px-20 sm: px-10 list-disc list-inside">
             <li>Registered Nurse (RN)</li>
             <li>Licensed Practical Nurse (LPN)</li>
             <li>Health Care Aide</li>
