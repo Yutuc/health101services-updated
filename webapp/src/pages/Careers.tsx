@@ -40,7 +40,7 @@ export default function Careers() {
           </h1>
         </div>
         <div className="flex">
-          <p className=" text-xl md:px-20 sm: px-10">
+          <p className="text-xl md:px-20 sm: px-10">
             Health 101 Services continuously searches for talented and skilled
             healthcare professionals. We're looking for experienced and licensed
             healthcare and homecare staff. If you are interested in pursuing a
@@ -49,13 +49,13 @@ export default function Careers() {
           </p>
         </div>
         <div>
-          <p className=" text-xl pl-20 pt-5 pr-20 md:pl-20 sm: pl-10">
+          <p className="text-xl md:px-20 sm: px-10 pt-5">
             We're hiring for positions in Manitoba, Canada. For more
             information, or to apply for a position, please email your resume
             and diploma or certificate to admin@health101services.ca ​
           </p>
         </div>
-        <div className="md:pt-10 sm: pt-5 text-xl">
+        <div className="pt-5 text-xl">
           <div className="flex md:px-20 sm: px-10">
             <h1 className="text-secondaryBlue font-bold md:text-2xl sm:text-xl xs: text-lg">
               Health101 Services staff are:
