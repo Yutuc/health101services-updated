@@ -30,13 +30,13 @@ export default function Services() {
           </h1>
         </div>
         <div className="flex">
-          <h2 className="py-5 md:px-10 sm: px-5 text-xl">
+          <h2 className="py-5 md:px-20 sm: px-10 text-xl">
             Health 101 Services is here to assist you in planning your health
             care needs and help you or your loved ones adjust to new
             surroundings.
           </h2>
         </div>
-        <div className="md:px-10 sm: px-5 pb-10 text-xl">
+        <div className="md:px-20 sm: px-10 pb-10 text-xl">
           <div className="flex md:text-3xl sm: text-xl">
             <h1 className="text-secondaryBlue font-bold">
               Our healthcare staff includes
