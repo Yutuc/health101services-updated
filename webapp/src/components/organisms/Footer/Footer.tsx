@@ -10,11 +10,11 @@ export default function Footer({}: AppHeaderProps) {
   }
 
   function openIG() {
-    window.open("https://www.health101services.ca/");
+    window.open("https://www.instagram.com/health101services/");
   }
 
   return (
-    <div className="w-full h-1/4 bg-secondaryBlue mt-5 p-5">
+    <div className="w-full h-52 bg-secondaryBlue mt-5 p-5">
       <div className="flex justify-center md:text-xl sm:text-lg">
         <h1 className="text-secondaryBlue font-bold text-white">
           Contact Information

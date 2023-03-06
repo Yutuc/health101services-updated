@@ -4,10 +4,6 @@ import EmailForm from "../components/organisms/EmailForm";
 import Footer from "../components/organisms/Footer";
 import { Transition } from "@headlessui/react";
 
-// interface Focus {
-//   focus: number;
-// }
-
 export default function Home() {
   return (
     <Transition
@@ -24,7 +20,7 @@ export default function Home() {
     >
       <div className="w-full h-screen">
         <div
-          className="w-full h-4/6 bg-cover bg-center"
+          className="w-full h-2/6 md:h-4/6 bg-cover bg-center"
           style={{
             backgroundImage: `url(${hero})`,
           }}

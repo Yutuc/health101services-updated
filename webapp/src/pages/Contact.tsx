@@ -20,7 +20,7 @@ export default function Contact() {
     >
       <div className="w-full h-screen">
         <div
-          className="w-full h-4/6 bg-cover bg-center"
+          className="w-full h-2/6 md:h-4/6 bg-cover bg-center"
           style={{
             backgroundImage: `url(${hero})`,
           }}

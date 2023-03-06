@@ -8,23 +8,6 @@ import Services from "./pages/Services";
 import Careers from "./pages/Careers";
 
 function App() {
-  // const [focus, setFocus] = useState(0);
-  // const location = useLocation();
-
-  // React.useEffect(() => {
-  //   if (location.pathname == "/") {
-  //     setFocus(0);
-  //   } else if (location.pathname == "/about") {
-  //     setFocus(1);
-  //   } else if (location.pathname == "/contact") {
-  //     setFocus(2);
-  //   } else if (location.pathname == "/services") {
-  //     setFocus(3);
-  //   } else if (location.pathname == "/careers") {
-  //     setFocus(4);
-  //   }
-  // }, [location]);
-
   return (
     <div className="App">
       <Layout />

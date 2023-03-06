@@ -85,7 +85,7 @@ export default function EmailForm({}: AppHeaderProps) {
           ></textarea>
           <div className="flex justify-between h-12">
             <button
-              className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 bg-secondaryBlue hover:bg-secondaryGreen rounded-3xl md:w-44 sm: w-32 text-white font-bold md:text-2xl sm:text-lg p-2"
+              className="bg-secondaryBlue hover:bg-secondaryGreen rounded-3xl md:w-44 sm: w-32 text-white font-bold md:text-2xl sm:text-lg p-2"
               type="submit"
             >
               Send
