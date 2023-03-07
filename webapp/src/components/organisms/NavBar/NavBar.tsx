@@ -22,14 +22,14 @@ export default function NavBar({ focus }: Focus, {}: AppHeaderProps) {
           </Link>
         </header>
       </div>
-      <div className="flex justify-evenly bg-secondaryBlue">
-        <Link className="flex w-8 h-full md:hidden py-1" to="/">
+      <div className="flex justify-evenly bg-secondaryBlue py-2">
+        <Link className="flex w-8 h-9 md:hidden" to="/">
           <img
             src={focus == 0 ? ContrastSymbol : WhiteSymbol}
             alt="Health101 Services Symbol"
           />
         </Link>
-        <div className="hidden md:flex md:py-3 sm:py-1">
+        <div className="hidden md:flex md:py-3">
           <Link
             className={
               focus == 0

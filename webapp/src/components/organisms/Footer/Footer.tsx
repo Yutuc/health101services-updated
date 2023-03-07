@@ -6,7 +6,7 @@ export interface AppHeaderProps {
 
 export default function Footer({}: AppHeaderProps) {
   function openFB() {
-    window.open("https://www.health101services.ca/");
+    window.open("https://www.facebook.com/h101services");
   }
 
   function openIG() {
